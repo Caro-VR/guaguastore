@@ -1,0 +1,175 @@
+/* .grid-container {
+    display: grid;
+    text-align: center;
+    border: 1px solid black;
+    gap: 3px;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "menu main main main"
+    "menu footer footer footer";
+} */
+
+body {
+    min-height: 100%;
+} 
+
+.header {
+    grid-area: header;
+    background-color: #fff;
+    color:  #000103f1;
+    font-family: 'Grape Nuts bold', cursive;
+    font-size: 30px;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #008080;
+    color:  #fff;
+    font-family: 'Oswald bold', sans-serif;
+    font-size: 30px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #008080;
+    color: black;
+    font-family: 'Oswald bold', sans-serif;
+    font-size: 30px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #000103f1;
+    color: beige;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 320px) {
+    .grid-container{
+        display: grid;
+        /*grid-template-rows: 100px 50px auto 100px;*/
+        /* grid-template-columns: 1fr 3fr;*/
+        grid-template-areas: 
+        "menu menu menu menu"
+        "main main main main"
+        "footer footer footer footer";
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container{
+        display: grid;
+        /*grid-template-rows: 100px 50px auto 100px;*/
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "menu main main main"
+        "footer main main main";
+    }
+}
+
+.h1 {
+    font-family: 'Oswald bold', sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-bottom: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.filtro {
+    width: 100%;
+}
+
+.filtros {
+    text-align: center;
+    font-family: 'Grape Nuts bold', cursive;
+}
+
+.navbar-nav {
+    font-family: 'Grape Nuts bold', cursive;
+}
+
+.tarjeta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    background-color: #008080;
+}
+
+@media(min-width: 992px) {
+    .tarjeta {
+        width: 33.333%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #008080;
+        padding: 5px;
+    }
+}
+
+.tarjeta img {
+    width: 100%;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.tarjeta h2 {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    background-color: #eaeaae;
+}
+
+.comprar {
+    background-color: beige;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.grupo-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    text-align: center;
+}
+
+.pagination {
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+    
